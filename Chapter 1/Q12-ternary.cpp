@@ -1,5 +1,3 @@
-// Write a C++ program to check larger of two numbers using Ternary operator
-
 #include <iostream>
 
 using namespace std;

@@ -1,9 +1,3 @@
-// Write a C++ Program to create a menu driven program for to perform the following operations
-// 1. Sum of Digit
-// 2. Armstrong or Not
-// 3. Palindrome or Not
-// 4. Multiplication of Digit
-
 #include <iostream>
 
 using namespace std;
@@ -68,6 +62,7 @@ void multiplicationOfDigits(){
 int main() {
     int choice;
     do {
+        cout << "--------------------------------------------------"<< endl;
         cout << "1. Sum of Digit" << endl;
         cout << "2. Armstrong or Not" << endl;
         cout << "3. Palindrome or Not" << endl;
@@ -75,6 +70,7 @@ int main() {
         cout << "5. Exit" << endl;
         cout << "Enter your choice: ";
         cin >> choice;
+        cout << "--------------------------------------------------"<< endl;
         switch (choice) {
             case 1:
                 sumOfDigits();

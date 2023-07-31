@@ -1,6 +1,4 @@
-// AddCurrency() which add 2 different Currency objects and returns a Currencyobject. Write
-// parameterized constructor to initialize the values and use appropriate functions to get the
-// details from the user and display it.
+//TODO To confirm with the teacher if the my interpretation of the question is correct
 
 #include <iostream>
 

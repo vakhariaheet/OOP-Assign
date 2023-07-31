@@ -22,13 +22,13 @@ class Complex{
 };
 
 int main(){
-    int r1, i1, r2, i2;
+    int realNum1, imaginaryNum1, realNum2, imaginaryNum2;
     cout << "Enter real and imaginary part of first complex number: ";
-    cin >> r1 >> i1;
+    cin >> realNum1 >> imaginaryNum1;
     cout << "Enter real and imaginary part of second complex number: ";
-    cin >> r2 >> i2;
+    cin >> realNum2 >> imaginaryNum2;
 
-    Complex c1(r1, i1), c2(r2, i2), c3;
+    Complex c1(realNum1, imaginaryNum1), c2(realNum2, imaginaryNum2), c3;
     c3 = c1.add(c2);
     c3.display();
 }

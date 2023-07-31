@@ -25,11 +25,11 @@ void findPerimeter(Paper p) {
 
 
 int main() {
-    int len, wid;
+    int length, width;
     cout << "Enter a length and width of a Page: ";
-    cin >> len >> wid;
+    cin >> length >> width;
 
-    Paper p(len, wid);
+    Paper p(length, width);
     findArea(p);
     findPerimeter(p);
 }

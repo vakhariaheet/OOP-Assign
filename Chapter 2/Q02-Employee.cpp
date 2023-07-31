@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 
 using namespace std;
@@ -30,8 +28,10 @@ class Employee {
 int main() {
     Employee e[3];
     for (int i = 0; i < 3; i++) {
+        cout << "-------------------------" << endl;
         cout << "Enter details of employee " << i + 1 << endl;
         e[i].get_data();
+        cout << "-------------------------" << endl;
     }
     for (int i = 0; i < 3; i++) {
         cout << "Details of employee " << i + 1 << endl;

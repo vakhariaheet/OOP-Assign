@@ -1,6 +1,3 @@
-// Write a C++ Program to create a class employee to print the detail of employees using
-// objects.
-
 #include <iostream>
 
 using namespace std;
@@ -19,10 +16,12 @@ class Employee{
             this->salary = salary;
         }
         void display(){
+            cout << "----------Employee Details----------" << endl;
             cout << "Name: " << name << endl;
             cout << "Age: " << age << endl;
             cout << "Designation: " << designation << endl;
             cout << "Salary: " << salary << endl;
+            cout << "------------------------------------" << endl;
         }
 };
 

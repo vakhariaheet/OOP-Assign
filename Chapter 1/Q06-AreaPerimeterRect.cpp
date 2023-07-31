@@ -9,6 +9,6 @@ int main(){
 	cin>>len>>wid;
 	int per = 2*(len+wid);
 	int area = len * wid;
-	cout<<" Area is "<< area << endl;
+	cout<<"Area is "<< area << endl;
 	cout<<"Perimeter is " << per << endl;
 }

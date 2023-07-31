@@ -11,13 +11,11 @@ class AddSub{
         AddSub(int num1, int num2){
             this->num1 = num1;
             this->num2 = num2;
+
+            cout << "Sum Of " << num1 << " and " << num2<<" is " << num1 + num2 << endl;
+            cout << "Diff Of " << num1 << " and " << num2<<" is " << num1 - num2 << endl;
         }
-        void add(){
-            cout << "Addition: " << num1 + num2 << endl;
-        }
-        void sub(){
-            cout << "Subtraction: " << num1 - num2 << endl;
-        }
+        
 };
 
 int main(){
@@ -25,6 +23,4 @@ int main(){
     cout << "Enter two numbers: ";
     cin >> num1 >> num2;
     AddSub as(num1, num2);
-    as.add();
-    as.sub();
 }
