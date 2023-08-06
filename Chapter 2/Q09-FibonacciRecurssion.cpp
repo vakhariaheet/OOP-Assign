@@ -19,7 +19,7 @@ int main(){
     cout << "Enter the number of elements: ";
     cin >> num;
     cout << "Fibonacci series: ";
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < num; i++){
         cout << getFiboDigit(i) << " ";
     }
 }
