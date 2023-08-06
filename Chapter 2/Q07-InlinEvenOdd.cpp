@@ -5,15 +5,12 @@
 using namespace std;
 
 inline void check(int num){
-    if(num % 2 == 0)
-        cout << num << " is even" << endl;
-    else
-        cout << num << " is odd" << endl;
+   return num % 2; 
 }
 
 int main(){
     int num;
     cout << "Enter a number: ";
     cin >> num;
-    check(num);
+    court<<check(num)?"Number is Odd":"Number is Even";
 }
