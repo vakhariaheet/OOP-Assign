@@ -1,5 +1,3 @@
-// Write a C++ program to make inline function to find positive/ negative number.
-
 #include <iostream>
 
 using namespace std;

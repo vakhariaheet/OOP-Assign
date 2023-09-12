@@ -1,5 +1,3 @@
-// Write a C++ program to make inline function to find odd/even. 
-
 #include <iostream>
 
 using namespace std;
