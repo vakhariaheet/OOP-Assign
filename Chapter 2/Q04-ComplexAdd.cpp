@@ -27,7 +27,6 @@ int main(){
     cin >> realNum1 >> imaginaryNum1;
     cout << "Enter real and imaginary part of second complex number: ";
     cin >> realNum2 >> imaginaryNum2;
-
     Complex c1(realNum1, imaginaryNum1), c2(realNum2, imaginaryNum2), c3;
     c3 = c1.add(c2);
     c3.display();

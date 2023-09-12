@@ -1,6 +1,7 @@
 #include <iostream>
 
 using namespace std;
+
 class DM;
 
 class DB {
@@ -15,7 +16,7 @@ class DB {
     cout << "Feet: " << feet << endl;
     cout << "Inches: " << inches << endl;
   }
-  friend void add(DB, DM);
+  friend void add(DB c1, DM c2);
 };
 
 class DM {
@@ -37,7 +38,7 @@ void add(DB db, DM dm) {
   int feet = db.feet + (dm.meters * 3.28084);
   int inches = db.inches + (dm.centimeters * 0.393701);
   if (inches >= 12) {
-    feet += inches / 12;
+    feet += inches / 12; 
     inches = inches % 12;
   }
   cout << "Sum of DB and DM: " << endl;
@@ -52,3 +53,5 @@ int main() {
   dm.getdata();
   add(db, dm);
 }
+
+ 

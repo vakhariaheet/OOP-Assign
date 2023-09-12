@@ -1,5 +1,3 @@
-//TODO To confirm with the teacher if the my interpretation of the question is correct
-
 #include <iostream>
 
 using namespace std;
@@ -9,10 +7,6 @@ class Currency {
         int rupee;
         int paisa;
     public:
-        Currency() {
-            rupee = 0;
-            paisa = 0;
-        }
         Currency(int r, int p) {
             rupee = r;
             paisa = p;
@@ -28,13 +22,13 @@ class Currency {
             cout << "Paisa: " << paisa << endl;
         }
         Currency add(Currency c) {
-            Currency temp;
-            temp.paisa = paisa + c.paisa;
-            temp.rupee = rupee + c.rupee;
-            if (temp.paisa >= 100) {
-                temp.paisa -= 100;
-                temp.rupee++;
+            int paisa = this->paisa + c.paisa;
+            int rupee = this->rupee + c.rupee;
+            if (paisa >= 100) {
+                paisa -= 100;
+                rupee++;
             }
+            Currency temp(rupee,paisa);
             return temp;
         }
 };
