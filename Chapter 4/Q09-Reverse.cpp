@@ -16,5 +16,6 @@ int main() {
   int num;
   cout << "Enter a number: ";
   cin >> num;
+  reverse(num);
   return 0;
 }
