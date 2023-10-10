@@ -8,7 +8,7 @@ int main() {
   cin >> str1;
   cout << "Enter a second string: ";
   cin >> str2;
-  if (str1.compare(str2) == 0)
+  if (str1 == str2)
     cout << "Both strings are equal" << endl;
   else
     cout << "Both strings are not equal" << endl;
@@ -16,6 +16,6 @@ int main() {
   cout << "Concatenated string: " << str1 << endl;
 
   char str3[100];
-  str1.copy(str3, str1.length(), 0);
+  str1.copy(str3, 3, 0);
   cout << "Copied string: " << str3 << endl;
 }

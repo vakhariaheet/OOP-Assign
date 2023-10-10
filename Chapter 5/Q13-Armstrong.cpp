@@ -9,8 +9,8 @@ int isArmstrong(int N) {
   int sum = 0;
   int temp = N;
   while (temp != 0) {
-    int rem = temp % 10;
-    sum += rem * rem * rem;
+    int digit = temp % 10;
+    sum += digit * digit * digit;
     temp /= 10;
   }
   if (sum == N) {

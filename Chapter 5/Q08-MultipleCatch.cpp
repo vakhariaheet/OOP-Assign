@@ -25,6 +25,10 @@ int main() {
   } catch (float N) {
     cout << "Invalid number" << endl;
     return 0;
+  }catch(...){
+    cout << "Koi pan Error" << endl;
+    return 0;
+    
   }
   cout << "Number: " << N << endl;
 }

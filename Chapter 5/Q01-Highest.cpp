@@ -25,8 +25,6 @@ int main() {
         if (arr[i] > highest) {
             secondHighest = highest;
             highest = arr[i];
-        } else if (arr[i] > secondHighest && arr[i] != highest) {
-            secondHighest = arr[i];
         }
     }
     cout << "Highest: " << highest << endl;

@@ -1,14 +1,7 @@
 
 #include <iostream>
 
-    using namespace std;
-
-int takeWithDrawAmt() {
-  float withdrawAmount;
-  cout << "Enter the withdraw amount: ";
-  cin >> withdrawAmount;
-  return withdrawAmount;
-}
+using namespace std;
 
 int main() {
   int accountNo;
@@ -18,7 +11,8 @@ int main() {
   cout << "Enter the balance: ";
   cin >> balance;
   do {
-    withdrawAmount = takeWithDrawAmt();
+    cout << "Enter the withdraw amount: ";
+    cin >> withdrawAmount;
     try {
       if (withdrawAmount > balance) {
         throw withdrawAmount;
