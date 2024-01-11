@@ -1,11 +1,19 @@
 {
     "files.associations": {
+        "*.ejs": "html",
         "*.env.local": "env",
         "ostream": "cpp",
         "iostream": "cpp",
         "string": "cpp",
         "iosfwd": "cpp",
-        "istream": "cpp"
+        "istream": "cpp",
+        "exception": "cpp",
+        "ratio": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "vector": "cpp",
+        "__node_handle": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "java.debug.settings.onBuildFailureProceed": true
 }

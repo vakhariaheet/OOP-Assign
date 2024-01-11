@@ -16,7 +16,7 @@ class DB {
     cout << "Feet: " << feet << endl;
     cout << "Inches: " << inches << endl;
   }
-  friend void add(DB c1, DM c2);
+  friend DB add(DB db, DM dm);
 };
 
 class DM {
@@ -31,19 +31,17 @@ class DM {
     cout << "Meters: " << meters << endl;
     cout << "Centimeters: " << centimeters << endl;
   }
-  friend void add(DB, DM dm);
+  friend DB add(DB db, DM dm);
 };
 
-void add(DB db, DM dm) {
+DB add(DB db, DM dm) {
   int feet = db.feet + (dm.meters * 3.28084);
   int inches = db.inches + (dm.centimeters * 0.393701);
   if (inches >= 12) {
     feet += inches / 12; 
     inches = inches % 12;
   }
-  cout << "Sum of DB and DM: " << endl;
-  cout << "Feet: " << feet << endl;
-  cout << "Inches: " << inches << endl;
+  return DB(feet, inches);
 };
 
 int main() {
@@ -51,7 +49,7 @@ int main() {
   DM dm;
   db.getdata();
   dm.getdata();
-  add(db, dm);
+  DB result = add(db, dm);
+  result.showdata();
 }
-
  

@@ -1,3 +1,6 @@
+/**
+ * Write a C++ program to accept a password and throw an exception if does not contain 1 Capital letter, 1 Small letter and 1 Special Symbol
+*/
 #include <iostream>
 #include <ctype.h>
 using namespace std;

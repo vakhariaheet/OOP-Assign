@@ -43,6 +43,7 @@ class Array {
     return sum;
   }
   T average() { return sum() / size; }
+  ~Array() { delete arr; }
 };
 
 int main() {

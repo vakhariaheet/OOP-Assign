@@ -27,8 +27,7 @@ int main() {
     getline(cin, uni[i]);
     };
     sort(uni, N);
-    cout << "----------------------Sorted "
-            "Universities-----------------------"
+    cout << "----------------------Sorted Universities-----------------------"
          << endl;
     for (int i = 0; i < N;i++){
         cout << uni[i] << endl;
