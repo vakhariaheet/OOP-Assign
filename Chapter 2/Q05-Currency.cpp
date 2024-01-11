@@ -7,7 +7,7 @@ class Currency {
         int rupee;
         int paisa;
     public:
-        Currency(int r, int p) {
+        Currency(int r=0, int p=0) {
             rupee = r;
             paisa = p;
         }
